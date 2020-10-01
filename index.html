@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <head>
-    <h1>Beehive Storage</h1>
-    <img src="beehive storage logo.png" width="20" height="20" alt="Beehive Storage">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+</style>
 </head>
 <body>
-    <div style="background-color:white;padding:20px;"></div>
-    <h1 style="color:black; font-size:60px;">Low Discounted Rates!</h1>
-    </div>
-    <div style="background-color:white;padding:20px;">
-    <h1 style="color:black; font-size:60px;">Convienent Locations!</h1>
-    </div>
-    <h1 style="color:rgb(6, 50, 80);">About Beehive Storage<h1>
-    <h2><p style="color:black;">We think Utah is a great place to live and do business. We have been striving to provide quality storage solutions since... </p></h2>
-    <h1 style="color:rgb(6, 50, 80)">Our Locations Feature</h1>
-    <h2 style="color:black;">Newest Storage Facility Units</h2>
-    <h2 style="color:black;">Onsite Managers</h2>
-    <h2 style="color:black;">Security Gates & Cameras</h2>
-    <h2 style="color:black;">Large RV and Commerical Storage</h2>
-    <div style="background-color:orange;padding:20px;">
-    <a href="www.beehivestorage-utah.com" style="color:black;">Beehive Storage Home Page<a>
-    </div>
-    <div style="background-color:orange; padding:20px;">
-    <a href="www.beehivestorage-utah.com/locations" style="color:black;">Locations<a>
-    </div>
-        <div style="background-color:orange; padding:20px;">
-    <a href="www.beehivestorage-utah.com/gallery" style="color:black;">Photo Gallery<a>
-    </div>
-        <div style="background-color:orange; padding:20px;">
-    <a href="www.beehivestorage-utah.com/coupon"style="color:black;">Coupon<a>
-    </div>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Beehive Storage</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Locations</a></li>
+          <li><a href="#">Photo Gallery</a></li>
+          <li><a href="#">Coupons</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+
+<h2>Lowest Discounted Rate - Beehive Storage - Convienent Locations</h2>
+
+<div class="row">
+  <div class="column" style="background-color:rgb(233, 229, 211);">
+    <img src="logo.jpg" alt="logo">
+  </div>
+  <div class="column" style="background-color:rgb(13, 132, 179);">
+    <h2></h2>
+    <img src="storage.jpg" alt="Beehive Storage">
+    <h2>About Us</h2>
+    <p>We think Utah is a great place to live and do business. We have been striving to provide quality storage solutions since 1987. Our storage facilities have friendly, professional resident managers - they live on site! We think this important. Thay take great pride in keeping thier facility clean well maintained - after all, it is their home! Find out more about the specifiic storage location you are interested in by clicking on the View Our Location button. We can help your storage needs for home, recreational, commercial, and mini-warehouse storage.  We look forward to meeting you and serving your needs. Call today for availability and pricing </p>
+    <img src="coupon.jpg" alt="Coupon">
+  </div>
+</div>
+
+<footer>
+    <p>Insert Footer Here</p>
+</footer>
+
+
+
 </body>
 </html>
 
