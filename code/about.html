@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta lang="en" />
+    <!--<meta name="viewport" content="width:device-width, initial-scale=1.0" /> -->
+    <title>Beehive Storage</title>
+
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="myCSSSheet.css">
+
+
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <!--Navigation
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top">
+            <a href="beehivestorage-utah.com/test" class="navbar-brand mr-auto pl-1">Beehive Storage</a>
+            <button class="navbar-toggler rounded" data-toggle="collapse" data-target="#navContent"
+                aria-controls="navBarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.php" title="ABOUT"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="locationsMain.php" title="Beehive Storage Locations">
+                            Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.php" title="About Beehive Storage"> About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="coupons.php" title="Coupons"> Coupons</a></li>
+                    <li class="nav-item"><a class="nav-link" href="photos.php" title="Photo Gallery"> Photo Gallery</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="beehivestorage-utah.com">Beehive Storage</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto flex-column vertical-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="locationsMain.php">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.php">About</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="coupons.php">Coupons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="photos.php">Photo Gallery</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--End navigation-->
+        <div class="container-fluid container rounded p-3 my-3 bg-warning text-white text-center col-sm-8">
+
+            <h1>About Beehive Storage</h1>
+
+        </div>
+    </header>
+    <!-- image element-->
+
+    <div>
+        <img src="">
+    </div>
+    <!-- Container for About us-->
+    <div class="container-fluid container rounded p-3 my-3 bg-primary text-white col-sm-8">
+        <h2>About Beehive Storage:</h2>
+        <p>
+            We think Utah is a great place to live and do business. We have been striving to provide quality storage
+            solutions since
+            1987.
+            Our storage facilities have friendly, professional resident managers - they live on site! We think this
+            important.
+            Thay take great pride in keeping thier facility clean well maintained - after all, it is their home!
+            Find out more about the speciic storage location you are interested in by clicking on the View Our Location
+            button.
+            We can help your storage needs for home, recreational, commercial, and mini-warehouse storage.
+            We look forward to meeting you and serving your needs. Call today for availability and pricing !
+        </p>
+    </div>
+
+    <div class="text-center"><button type="button" class="btn"><a href="locationsMain.html"
+                class="btn bg-primary text-white btn-lg mt-3">View our
+                Locations</a></button></div>
+
+
+
+
+
+
+
+    <!--Footer-->
+    <footer class="footer py-4 bg-primary fixed sticky" id="footer">
+        <div class="  container-fluid">
+            <span class="m-0 text-center text-white">Copyright &copy; Beehive Storage Utah 2020</span>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+<style>
+    @media (min-width:992px) {
+        .vertical-nav {
+            position: fixed;
+            top: 56px;
+            left: 0;
+            width: 150px;
+            height: 100%;
+            background-color: #f8f8f8;
+            overflow-y: auto;
+            padding-top: 30px
+        }
+    }
+
+    #page-container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    #content-wrap {
+        padding-bottom: 2.5rem;
+        /* Footer height */
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;
+        text-align: center;
+        /* Footer height */
+    }
+</style>
+
+</html>
