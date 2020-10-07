@@ -1,96 +1,208 @@
+
 <!DOCTYPE html>
-<html>
+
 <head>
-<style>
-    * {
-        box-sizing: border-box;
-    }
 
-    .row {
-        display: flex;
-    }
 
-    /* Create two equal columns that sits next to each other */
-    .column {
-        flex: 50%;
-        padding: 10px;
-        height: 300px;
-    
-    }
-</style>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   
-   <h2 style="border:2px solid blue; color:black; background-color:blue;">Beehive Storage</h2>
-   <h1 style="border: 1px solid blue; color: black; background-color:white;">Low Discounted Rates and Convienent Locations</h1>
-   
+   <title>Bootstrap Example</title>
+
+
+   <meta charset="utf-8">
+
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
 </head>
+
+
+<html>
+
+
+
+
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<style>
+
+
+   * {
+
+
+       box-sizing: border-box;
+
+
+   }
+
+
+
+
+
+
+
+   .row {
+
+
+       display: flex;
+
+
+   }
+
+
+
+
+   /* Create two equal columns that sits next to each other */
+
+
+   .column {
+
+
+       flex: 50%;
+
+
+       padding: 10px;
+
+
+       height: 300px;
+
+
+       /* Should be removed. Only for demonstration */
+
+
+   }
+
+
+</style>
+
+</head>
+
 <body>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Beehive Storage</a>
-            </div>
-           
-           <!-- Figure out if we are linking internally or externally -->
-            <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our Locations</a></li>
-                <li><a href="#">Photo Gallery</a></li>
-                <li><a href="#">Coupons</a></li>
-            </ul>
-        </div>
-    </nav>
 
 
+   <nav class="navbar navbar-default">
+
+
+       <div class="container-fluid">
+
+
+           <div class="navbar-header">
+
+
+               <a class="navbar-brand" href="#">Beehive Storage</a>
+
+
+           </div>
+
+
+           <ul class="nav navbar-nav">
+
+
+               <li><a href="#">Home</a></li>
+
+
+               <li><a href="#">Our Locations</a></li>
+
+
+               <li><a href="#">Photo Gallery</a></li>
+
+
+               <li><a href="#">Coupons</a></li>
+
+
+           </ul>
+
+
+       </div>
+
+
+   </nav>
+
+   <h2>Lowest Discounted Rate - Beehive Storage - Convienent Locations</h2>
+
+
+   <div class="row">
+
+
+       <div class="column" style="background-color:rgb(233, 229, 211);">
+
+
+           <img src="logo.jpg" alt="logo">
+
+
+       </div>
+
+       <div class="column" style="background-color:rgb(13, 132, 179);">
+
+
+           <h2></h2>
+
+
+           <img src="storage.jpg" alt="Beehive Storage">
+
+
+           <h2>About Us</h2>
+
+
+           <p>We think Utah is a great place to live and do business. We have been striving to provide quality storage
+
+
+               solutions since 1987. Our storage facilities have friendly, professional resident managers - they live
+
+
+               on site! We think this important. Thay take great pride in keeping thier facility clean well maintained
+
+
+               - after all, it is their home! Find out more about the specifiic storage location you are interested in
+
+
+               by clicking on the View Our Location button. We can help your storage needs for home, recreational,
+
+
+               commercial, and mini-warehouse storage. We look forward to meeting you and serving your needs. Call
+
+
+               today for availability and pricing </p>
+
+
+           <img src="coupon.jpg" alt="Coupon">
+
+
+       </div>
+
+
+   </div>
+
+
+   <!--Footer-->
+
+
+   <footer class="footer py-4 bg-primary">
+
+
+       <div class="  container-fluid">
+
+
+           <span class="m-0 text-center text-white">Copyright &copy; Beehive Storage Utah 2020</span>
+
+
+       </div>
+
+   </footer>
 
    
-    <div class="row">
-        <div class="column" style="background-color:rgb(233, 229, 211);">
-            <img src="logo.jpg" alt="logo">
-        </div>
-        <div class="column" style="background-color:rgb(13, 132, 179);">
-            <h2></h2>
-            <img src="storage.jpg" alt="Beehive Storage">
-           <b><h2 style="background-color:gray;color:Blue;font-family:arial;font-size:100%;text-align:left;padding: 30px;">About Beehive Storage</h2></b>
-           <b><p style="background-color:gray;color:Black;font-family:arial;font-size:100%;text-align:left;padding: 30px;">We think Utah is a great place to live and do business. Click here to find out more about us!</p></b>
-        </div>
-       <!-- "Our Locations Feature" Section -->
- \
-    <h1 style:"color:blue;"> Our Locations Feature </h1>
-      <ul>
-         <li>Newest Storage Facility Unit</li>
-         <li>Onsite Manager</li>
-         <li>Security Gates and Cameras</li>
-         <li>Large RV and Commercial Storage</li>
-      </ul>
-
-</table>
-       <!-- Optional section for page links -->
-         <div style="border:2px solid Yellow; color:black; background-color:yellow;"> 
-            <h1>View Our Locations</h1>
-            <h1>View Photo Gallery</h1>
-            <h1>View our Coupons</h1>
-        </div>
-    
-       <a href="mailto:carolynwhite.utah@gmail.com>Email Beehive Storage</a>
-
- <!--Footer-->
-    <footer class="footer py-4 bg-primary">
-        <div class="  container-fluid">
-            <span class="m-0 text-center text-white">Copyright &copy; Beehive Storage Utah 2020</span>
-        </div>
-    </footer>
-
-
 </body>
 
 </html>
+
