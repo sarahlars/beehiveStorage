@@ -25,9 +25,6 @@
 </head>
 
 
-<html>
-
-
 
 
 
@@ -36,6 +33,68 @@
 
 <style>
 
+div.a {
+  text-align: center;
+}
+
+
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  background-color: burlywood;
+  position: fixed;
+  height: 40%;
+  overflow: hidden;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: darkturquoise;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 100px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
 
    * {
 
@@ -44,11 +103,6 @@
 
 
    }
-
-
-
-
-
 
 
    .row {
@@ -62,22 +116,16 @@
 
 
 
-   /* Create two equal columns that sits next to each other */
-
-
    .column {
 
 
-       flex: 50%;
+       flex: 100%;
 
 
        padding: 10px;
 
 
        height: 300px;
-
-
-       /* Should be removed. Only for demonstration */
 
 
    }
@@ -87,103 +135,64 @@
 
 </head>
 
+
 <body>
 
+    <div class="jumbotron text-center">
+        <h1>Beehive Storage</h1>
+        <p>Low Discounted Rates and Convienent Locations</p>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Carousel</h3>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      </div>
 
 
-   <nav class="navbar navbar-default">
+    <div class="sidebar">
+     <a class="active" href="#home">Home</a>
+     <a href="#about">About Us</a>
+     <a href="#locations">Locations</a>
+     <a href="#photogallery">Photo Gallery</a>
+    </div>
+ 
 
+ <section>
+    <div class="column" style="background-color:rgb(13, 132, 179);">
+    </div>
 
-       <div class="container-fluid">
-
-
-           <div class="navbar-header">
-
-
-               <a class="navbar-brand" href="#">Beehive Storage</a>
-
-
-           </div>
-
-
-           <ul class="nav navbar-nav">
-
-
-               <li><a href="#">Home</a></li>
-
-
-               <li><a href="#">Our Locations</a></li>
-
-
-               <li><a href="#">Photo Gallery</a></li>
-
-
-               <li><a href="#">Coupons</a></li>
-
-
-           </ul>
-
-
-       </div>
-
-
-   </nav>
-
-   <h2>Lowest Discounted Rate - Beehive Storage - Convienent Locations</h2>
-
-
-   <div class="row">
-
-
-       <div class="column" style="background-color:rgb(233, 229, 211);">
-
-
-           <img src="logo.jpg" alt="logo">
-
-
-       </div>
+</section>
 
        <div class="column" style="background-color:rgb(13, 132, 179);">
 
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>About Us</h3>
+                <p>We think Utah is a great place to live and do business. We have been striving to provide quality storage solutions since 1987.</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>Our Locations Feature:</h3>
+                <p>Newest Storage Facilities</p>
+                <p>Onsite Managers</p>
+                <p>Security Gates and Cameras</p>
+                <p>Large RV and Commerical Storage</p>
+              </div>
+              <div class="col-sm-4">
+                <h3>*Insert Coupon Picture*</h3>
+              </div>
+            </div>
+          </div>
 
-           <h2></h2>
-
-
-           <img src="storage.jpg" alt="Beehive Storage">
-
-
-           <h2>About Us</h2>
-
-
-           <p>We think Utah is a great place to live and do business. We have been striving to provide quality storage
-
-
-               solutions since 1987. Our storage facilities have friendly, professional resident managers - they live
-
-
-               on site! We think this important. Thay take great pride in keeping thier facility clean well maintained
-
-
-               - after all, it is their home! Find out more about the specifiic storage location you are interested in
-
-
-               by clicking on the View Our Location button. We can help your storage needs for home, recreational,
-
-
-               commercial, and mini-warehouse storage. We look forward to meeting you and serving your needs. Call
-
-
-               today for availability and pricing </p>
-
-
-           <img src="coupon.jpg" alt="Coupon">
-
-
+            </div.a>
        </div>
 
-
-   </div>
-
+</section>
 
    <!--Footer-->
 
@@ -205,4 +214,3 @@
 </body>
 
 </html>
-
