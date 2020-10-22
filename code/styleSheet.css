@@ -1,17 +1,3 @@
-@media (min-width: 992px) {
-  .vertical-nav {
-    position: fixed;
-    top: 150px;
-
-    left: 0;
-    width: 150px;
-    height: 100%;
-    background-color: white;
-    overflow-y: auto;
-    padding-top: 30px;
-  }
-}
-
 /*#page-container {
         position: relative;
         min-height: 100vh;
@@ -31,30 +17,6 @@
   /* Footer height */
 }
 
-.navbar-brand {
-  top: 2%;
-  position: fixed;
-  height: 150px;
-}
-
-.navbar-toggler {
-  top: 10%;
-  position: sticky;
-  left: 800px;
-}
-
-/*#motto {
-        position: sticky;
-        height: 150px;
-
-
-
-    }*/
-
-#locationBttn {
-  padding-bottom: 10%;
-}
-
-.body {
-  padding: 10%;
+#logoHeader {
+  padding-right: 30px;
 }
