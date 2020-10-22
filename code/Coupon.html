@@ -29,23 +29,20 @@
 
 
 <body>
- <div class="container-fluid container rounded p-3 my-3 bg-warning text-white text-center col-sm-8">
+
+ <div class="container container rounded p-4 my-4 bg-warning text-white text-right">
     <div class="header">
        <div class="inner_header">
        <div class="logo_container">
-       <h1>COUPON</h1>
+       <h1>BEEHIVE<span>STORAGE</span></h1>
+		<h6>Low Discounted Rates and Convienent Locations</h6>
        </div>
-       
+       </div>
+      
 </div>
 </div>
 </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-          </div>
-        </div>
-</div>
     
 <div class="container">
         <div class="row">
@@ -53,48 +50,70 @@
           </div>
           <div class="col-sm-4">
           </div>
-        </div>
       </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto flex-column vertical-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="locationsMain.php">Locations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.php">About</a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="coupons.php">Coupons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="photos.php">Photo Gallery</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--End navigation-->
-        
     </header>
 
+ <div id="my-carousel" class="carousel slide" data-ride="carousel">
+   <ol class="carousel-indicators">
+   		<li data-target="#myCarousel" data-slide-to="0" class="active"</li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+  <div class="carousel-inner">
+  
+  <div class="carousel-item active">
+  	<div class="container">
+        <img src="../assets/photos/HPIM0069.JPG" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+  	</div>
+  </div>
+  <div class="carousel-item">
+  	<div class="container">
+<img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+      </div>
+    </div>
+   </div>
+     <div class="carousel-item">
+  	<div class="container">
+		 <img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+      </div>
+    </div>
+   </div>
+   
 
-<div class="container-fluid container rounded p-3 my-3 bg-primary text-white col-sm-8">
-<img src="BeehiveStorageCoupon.jpg" alt="Beehive Storage Coupon">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+                
+        
+             
+             <div class="container">
+  <div class="row">
+   <div class="col-sm-4">
+      <h3>Our Locations Feature</h3>
+      <p style="font-size:20px">Newest Storage Facilities</p>
+              <p style="font-size:20px"> Onsite Managers</p>
+               <p style="font-size:20px">Security Gates <b>and</b> Cameras</p>
+               <p style="font-size:20px">Large RV and Commerical Storage</p>
+    </div>
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4">      
+      <img src="BeehiveStorageCoupon.jpg" alt="Beehive Storage Coupon">
+    </div>
+  </div>
 </div>
+               
+             
 
 
     <!--Footer-->
-    <footer class="footer py-4 bg-primary fixed sticky" id="footer">
-        <div class="  container-fluid">
+    <footer class="footer" id="footer">
+    <div class="row">
+        <div class="container-fluid">
             <span class="m-0 text-center text-white">Copyright &copy; Beehive Storage Utah 2020</span>
         </div>
 
@@ -105,7 +124,6 @@
         .vertical-nav {
             position: fixed;
             top: 150px;
-
             left: 0;
             width: 150px;
             height: 100%;
@@ -127,7 +145,7 @@
     }
 
     #footer {
-        position: fixed;
+        position: justified;
         bottom: 0;
         width: 100%;
         height: 2.5rem;
@@ -147,6 +165,7 @@
  	width: 100%;
     height: 80px;
     display: inline-block;
+
     
     }
     
@@ -161,17 +180,19 @@
 .logo_container{
 	height: 100%;
     display: table;
-    float: left;
+    float: center;
     
     }
     
 .logo_container h1{
 	color: black;
     height: 90%;
-    display: table-cell;
+    display: flex;
     vertical-align: middle;
     font-size: 70px;
     font-weight: 400;
+
+ 
     
 
 }
@@ -180,20 +201,6 @@
 	font-weight: 800;
     
     }
-
-    .navbar-brand {
-        top: 2%;
-        position: fixed;
-        height: 150px;
-    }
-
-    .navbar-toggler {
-        top: 10%;
-        position: sticky;
-        left: 800px;
-       
-    }
-
     /*#motto {
         position: sticky;
         height: 150px;
@@ -206,6 +213,23 @@
     .body {
         padding: 10%;
     }
+    
+    .carousel-item {
+    	height:32rem;
+        background:white;
+        color:black;
+        position: relative;
+        
+      }
+      
+     .container {
+     	position: relative;
+        bottom:0;
+        left:0;
+        right:0;
+        padding-bottom:50px;
+      }
+      
 </style>
 
 </html>
