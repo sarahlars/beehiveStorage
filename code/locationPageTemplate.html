@@ -77,7 +77,8 @@
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse " id="navContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="beehivestorage-utah.com" title="Home"> Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="beehivestorage-utah.com" title="Home">
+                            Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" title="Locations"> Locations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" title="Photo Gallery">Photo Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#" title="Coupons">Coupons</a></li>
@@ -106,21 +107,38 @@
 
 
     <!-- Container for About Location-->
-    <div class="container container-fluid">
-        <div class="row ">
-            <div class="rounded p-3 my-3 text-white col-sm-3">
-                <img src="../assets/USE THESE/StorageCityJPG(1).jpg">
-            </div>
-            <div class="col-sm-1"></div>
-            <div class="rounded p-3 my-3 bg-primary text-white col-sm-3">
-                <h2>North Salt Lake - Beehive Storage</h2>
-                <p>
-                    Blah Blah Blah Blah
-                </p>
-            </div>
-            <div class="col-sm-1"></div>
+    <div class="container">
+        <div class="row">
 
-            <div class="rounded p-3 my-3 bg-primary text-white col-sm-3">
+            <div class="container  container-fluid  d-flex col-sm-5" style="padding:5%">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193350.12665920847!2d-112.0239449242713!3d40.781909547756904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f79f8a466d43%3A0xc2cc363dc0b90e65!2sBeehive%20Storage!5e0!3m2!1sen!2sus!4v1603307308908!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="no" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="col-2"></div>
+            <div class="container container-fluid bg-primary col-sm-5 rounded">
+                <div class="row ">
+                    <div class="rounded p-3 my-3  text-white ">
+                        <div class="rounded p-3 my-3 text-white col-sm-3 align-items-center">
+                            <img src="../assets/USE THESE/StorageCityJPG(1).jpg">
+                        </div>
+                        <h2>North Salt Lake - Beehive Storage</h2>
+
+                        <ul>
+                            <li>Location</li>
+                            <li>Number</li>
+                            <li>Other Info</li>
+                            <li>Location</li>
+                            <li>Number</li>
+                            <li>Other Info</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="rounded p-3 my-3 bg-primary text-white col-sm-3">
                 <ul>
                     <li>Location</li>
                     <li>Number</li>
@@ -129,18 +147,33 @@
                     <li>Number</li>
                     <li>Other Info</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Container for the image gallery -->
-    <div class="container col-sm-6">
+    <div class="container col-sm-6" style="padding:5%">
 
         <!-- Full-width images with number text -->
         <div class="mySlides">
             <div class="numbertext">1 / 6</div>
-            <img src="../assets/USE THESE/storageCityNSL/NSL1.jpg" style="width:100%">
+            <img src="../assets/USE THESE/storageCityNSL/NSL1.jpg" style="width:100% ">
         </div>
 
         <div class="mySlides">
@@ -180,7 +213,7 @@
         <!-- Thumbnail images -->
         <div class="row" id="btmPhoto">
             <div class="column">
-                <img class="demo cursor rounded" src="../assets/USE THESE/storageCityNSL/NSL1.jpg" style="width:100%"
+                <img class="demo cursor" src="../assets/USE THESE/storageCityNSL/NSL1.jpg" style="width:100%"
                     onclick="currentSlide(1)" alt="The Woods">
             </div>
             <div class="column">
@@ -207,12 +240,7 @@
     </div>
     <br />
     <br />
-    <div class="container  container-fluid col-sm-3 d-flex justify-content-center">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193350.12665920847!2d-112.0239449242713!3d40.781909547756904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f79f8a466d43%3A0xc2cc363dc0b90e65!2sBeehive%20Storage!5e0!3m2!1sen!2sus!4v1603307308908!5m2!1sen!2sus"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="no" aria-hidden="false"
-            tabindex="0"></iframe>
-    </div>
+
 
     <br />
     <br />
@@ -268,6 +296,9 @@
             captionText.innerHTML = dots[slideIndex - 1].alt;
         }
     </script>
+
+
+
 
 </body>
 
@@ -374,5 +405,7 @@
         padding-bottom: 10%;
     }
 </style>
+
+
 
 </html>
