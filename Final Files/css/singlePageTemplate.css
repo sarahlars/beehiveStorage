@@ -489,3 +489,11 @@ nav ul li {
 	background-color: #FFFFFF;
 /*	padding:1000px;*/
 }
+
+.containerHome {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+	background-color: #FFFFFF;
+}
